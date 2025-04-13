@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Sized Apparel - Alien Textures</name>
+  <author>OTYOTY + NyaamZ</author>
+  <url>https://gitgud.io/NyaamZ/sizedapparel-alien-textures</url>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <packageId>NyaamZ.SA.AlienTextures</packageId>
+  <description>
+
+		.                    Breasts      Nipples       Penis        Vagina       Anus         Belly       JiggleUp
+		Anty                    Y            N             Y           Y            Y            Y             N
+		AOC                    Y            N             Y           Y            Y            Y             N
+		Bori                      Y            N             Y           Y            Y            Y             N
+		Dragonian            Y            Y             Y            Y            Y            Y            Y
+		Epona                  N            N             N           N            N            N             N
+		Heyra                   Y            N             Y           Y            Y            Y             N
+		Kiiro                     Y            N            Y            Y            Y            Y            Y
+		Kurin                    Y            Y             Y            Y            Y            Y             Y
+		Maru                    Y            Y             Y            Y            Y            Y            Y
+		Miho                    Y            N            Y            Y            Y            Y            N
+		Milira                    Y            N            Y            Y            Y            Y            Y
+		Moyo                    Y            N            Y            Y            Y            Y            N
+		Paniel                   Y            N            Y            Y            Y            Y            N
+		Rabbie                  Y            Y             Y            Y            Y            Y            N
+		Ratkin                   Y            Y             Y            Y            Y            Y            N
+		RedMoyo              Y            N            Y            Y            Y            Y            N
+		Roren                    Y            N            Y            Y            Y            Y            N
+		Vivi                        Y            N            Y            Y            Y            Y            N
+		Yuran                    Y            N             Y            Y            Y            Y            N
+
+		
+	@ Kiiro Textures by Talos - https://gitgud.io/ll.mirrors/sized-apparel-kiiro
+	@ Milira Textures by Akiya82 - https://gitgud.io/Akiya82/sized_apparel_zero_patch-milira_race
+	
+	</description>
+  <modDependencies>
+    <li>
+      <packageId>OTYOTY.SizedApparel</packageId>
+      <displayName>Sized Apparel for RJW</displayName>
+      <steamWorkshopUrl></steamWorkshopUrl>
+      <downloadUrl>https://gitgud.io/ll.mirrors/sized-apparel-zero</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>rim.job.world</li>
+    <li>OTYOTY.SizedApparel</li>
+  </loadAfter>
+</ModMetaData>

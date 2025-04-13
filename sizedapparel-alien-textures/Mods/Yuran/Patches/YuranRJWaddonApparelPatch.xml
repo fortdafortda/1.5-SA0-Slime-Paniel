@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yuran RJW addon</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+								<li>SizedApparel_IgnorePose</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+							<li>SizedApparel_IgnorePose</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear_Mask"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear_Mask"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_AP_Tentacle_Headgear_Mask"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye_Long"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye_Long"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowBelly</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_ShowUdder</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "YR_Tentacle_Combat_Aphrodisiac_Gas_Eye_Long"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowBelly</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_ShowUdder</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

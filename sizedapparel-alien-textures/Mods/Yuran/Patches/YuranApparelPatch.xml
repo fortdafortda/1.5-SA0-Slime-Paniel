@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Yuran race</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+        <!--==  부적  ==-->
+        <!--열기-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_Heat"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Heat"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Heat"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+        <!--날카로움-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_Sharp"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Sharp"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Sharp"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+        <!--둔탁함-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_Blunt"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Blunt"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_Blunt"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+        <!--==  외투  ==-->
+        <!--유란 백운 외투-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_WhiteOutCloth"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_WhiteOutCloth"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_WhiteOutCloth"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+        <!--유란 운무-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_WhiteSeeCape"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_WhiteSeeCape"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_WhiteSeeCape"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+        <!--유란 흑운-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "YR_AP_BlackSunOutCloth"]/apparel/tags</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_BlackSunOutCloth"]/apparel</xpath>
+            <value>
+              <tags>
+                <li>SizedApparel_IgnorBreastSize</li>
+                <li>SizedApparel_ShowBelly</li>
+                <li>SizedApparel_ShowPrivateCrotch</li>
+                <li>SizedApparel_ShowUdder</li>
+              </tags>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "YR_AP_BlackSunOutCloth"]/apparel/tags</xpath>
+            <value>
+              <li>SizedApparel_IgnorBreastSize</li>
+              <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_ShowUdder</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

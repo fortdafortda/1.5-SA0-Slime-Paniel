@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Yuran_Race" or defName = "Yuran_Race_Miko" or defName = "Yuran_Race_Miko_BlackSnake"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+        <value>
+          <li>
+            <key>Apparel_BodyStrap</key>
+            <value>Things/Pawn/Yuran/Apparel/BodyStrap/BodyStrap</value>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Yuran_Race" or defName = "Yuran_Race_Miko" or defName = "Yuran_Race_Miko_BlackSnake"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+        <value>
+          <li>
+            <key>Apparel_TribalA</key>
+            <value>Things/Pawn/Yuran/Apparel/TribalA/TribalA</value>
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

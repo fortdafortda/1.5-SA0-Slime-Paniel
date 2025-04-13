@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- SizedApparel_ShowBelly
+	-不要藏肚子，即使衣服盖住了躯干
+
+SizedApparel_ShowPrivateCrotch
+	-不要藏胯部（生殖器和肛门），即使衣服盖住生殖器
+	
+SizedApparel_IgnorBreastSize
+	-尺码服装mod在计算服装的胸部尺寸时会忽略服装
+	-这个标签对跳过很有用。一个很好的例子是ratkin盾牌（盾牌覆盖乳房） 
+	
+SizedApparel_BellyUnderBreasts
+    -隆起腹部服裝圖層在胸部下，肚子的服裝不會遮擋到胸部區塊(胸部跟腹部圖檔分離使用)	
+	
+SizedApparel_RenderAsCorset
+    -緊身胸衣放在襯衫上方但在襯衫胸部下方 。 不過可能有個小問題 。 。 。 胸部部分紋理也被放置在緊身胸衣上方     
+	-->
+<Patch>
+ <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Milira Race</li>
+	</mods>	
+       <match Class="PatchOperationSequence">
+        <success>Normal</success>
+     <operations>
+<!-- 雙翼推進器-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_Booster"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_Booster"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_Booster"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--小型离子浮游单元背包-->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--自律护盾浮游单元背包-->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack_Shield"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack_Shield"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_FloatUnitPack_Shield"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--米莉安独眼城门盾-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milian_RookShield"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_RookShield"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_RookShield"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--米莉安羽形盾-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milian_FeatherShapeShield"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_FeatherShapeShield"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_FeatherShapeShield"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--米莉安骑士盾-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milian_KnightShield"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_KnightShield"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_KnightShield"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--米莉安轻型防弹甲-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milian_LightArmor"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_LightArmor"]/apparel</xpath>
+          <value>
+            <tags>
+              <li>SizedApparel_ShowBelly</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milian_LightArmor"]/apparel/tags</xpath>
+          <value>
+            <li>SizedApparel_ShowBelly</li>
+          </value>
+        </match>
+      </li>
+
+<!-- 米莉拉代达罗斯之翼 -->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_DaedalusWings"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_DaedalusWings"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_DaedalusWings"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!-- 米莉拉传统服饰（款式1） -->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_BasicDressI"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressI"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressI"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+          </value>
+        </match>
+      </li>
+<!-- 米莉拉传统服饰（款式2） -->	
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_BasicDressII"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressII"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressII"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+          </value>
+        </match>
+      </li>
+<!-- 米莉拉传统服饰（款式3） -->	
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_BasicDressIII"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressIII"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_BasicDressIII"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+          </value>
+        </match>
+      </li>	  
+<!-- 米莉拉风防尘大衣 -->	
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_Dustcoat"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_Dustcoat"]/apparel</xpath>
+          <value>
+            <tags>
+              <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_Dustcoat"]/apparel/tags</xpath>
+          <value>
+            <li>SizedApparel_ShowBelly</li>
+			<li>SizedApparel_ShowPrivateCrotch</li>
+			<li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!-- 米莉拉毛绒披肩 -->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Milira_PlushCape"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_PlushCape"]/apparel</xpath>
+          <value>
+            <tags>
+            <li>SizedApparel_ShowBelly</li>
+			<li>SizedApparel_ShowPrivateCrotch</li>
+			<li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Milira_PlushCape"]/apparel/tags</xpath>
+          <value>
+            <li>SizedApparel_ShowBelly</li>
+			<li>SizedApparel_ShowPrivateCrotch</li>
+			<li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+
+      </operations>
+     </match> 
+  </Operation>
+</Patch>
