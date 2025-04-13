@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.5>
+    <li>1.5</li>
+    <li IfModActive="Roo.AntyRaceMod">Mods/Anty</li>
+    <li IfModActive="Millap.AOC">Mods/AOC</li>
+    <li IfModActive="Millap.Bori">Mods/Bori</li>
+    <li IfModActive="RooAndGloomy.DragonianRaceMod">Mods/Dragonian</li>
+    <li IfModActive="Epona.EponaRenaissanceUno">Mods/Epona</li>
+    <li IfModActive="Epona.EponaRenaissance">Mods/Epona</li>
+    <li IfModActive="Bando.Heyrathehorned">Mods/Heyra</li>
+	<li IfModActive="Ancot.KiiroRace">Mods/Kiiro</li>
+    <li IfModActive="Seioch.Kurin.HAR">Mods/Kurin</li>
+    <li IfModActive="VAMV.MaruRaceMod">Mods/Maru</li>
+    <li IfModActive="miho.fortifiedoutremer">Mods/Miho</li>
+    <li IfModActive="Ancot.MiliraRace">Mods/Milira</li>
+    <li IfModActive="Nemonian.MY">Mods/Moyo</li>
+    <li IfModActive="AhnDemi.PanieltheAutomata">Mods/Paniel</li>
+    <li IfModActive="kalospacer.AhnDemi.PanieltheAutomata">Mods/Paniel</li>
+    <li IfModActive="RunneLatki.RabbieRaceMod">Mods/Rabbie</li>
+    <li IfModActive="Solaris.RatkinRaceMod">Mods/Ratkin</li>
+    <li IfModActive="AOBA.RedMoyo">Mods/RedMoyo</li>
+    <li IfModActive="polonium.RorenRaceMod">Mods/Roren</li>
+    <li IfModActive="Euclidean.s16.core">Mods/s16-extension</li>
+    <li IfModActive="gguake.race.vivi">Mods/ViVi</li>
+    <li IfModActive="RooAndGloomy.YuranRaceMod">Mods/Yuran</li>
+    <li IfModActive="Akiya82.SlimeGirls">Mods/Slime</li>
+  </v1.5>
+</loadFolders>
